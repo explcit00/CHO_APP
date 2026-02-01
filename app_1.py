@@ -289,7 +289,7 @@ if files:
         df_monthly = generate_health_summary(full_raw_clean, group_by_col='MONTH')
         df_annual = generate_health_summary(full_raw_clean, group_by_col='ADDRESS')
 
-        st.success(f"Merged {len(combined_list)} files. Summaries Generated.")
+        st.success(f"Merged into {len(combined_list)} file. Summaries Generated!")
         st.dataframe(df_monthly, use_container_width=True)
 
         # EXCEL EXPORT
